@@ -1,2 +1,2 @@
 # AutoZoom
-NewHacks 2020 Project
+NewHacks @ UofT 2020 Project
