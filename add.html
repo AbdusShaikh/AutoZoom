@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="add.css">
+    </head>
+<header>
+    <h1 class = "meeting-title">Add meeting details</h1>
+</header>
+    <body>
+        <form id="meetingForm">
+            <label for="mname">Meeting Name:</label>
+            <input type="text" id="mname" name="mname"><br><br>
+            <label for="mlink">Meeting Link:</label>
+            <input type="url" id="mlink" name="mlink"><br><br>
+            <label for="mpassword">Meeting Password:</label>
+            <input type="password" id="mpassword" name="mpassword"><br><br>
+            <label for="mtime">Meeting time:</label>
+            <input type="datetime-local" id="mtime" name="mtime"><br><br>
+            <label for="mlabel">Meeting Label:</label>
+            <input type="text" id="mlabel" name="mlabel"><br><br>
+            <button type="submit" class="btn submit-button">Submit</button>
+            <input type="reset" onclick="reset_function()" value="Reset" class = "btn reset-button">
+        </form>
+        <script>
+            function reset_function(){
+                document.getElementById("newForm").reset()
+            }
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+        <script src="database(1).js"></script>
+    </body>
+</html>

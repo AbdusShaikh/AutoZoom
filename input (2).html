@@ -1,0 +1,68 @@
+<html>
+<head>
+    <link rel="stylesheet" href="add.css">
+    <script type="text/javascript" src="input.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+    <header>
+        <h1 class = "meeting-title">Add meeting details</h1>
+    </header>
+    <body>
+        <form id="meetingForm">
+        <label for="mname" name = "mname">Meeting Name:</label>
+        <input type="text" id="mname" name="mname"><br><br>
+        <label for="mlink">Meeting Link:</label>
+        <input type="url" id="mlink" name="mlink"><br><br>
+        <label for="mpassword">Meeting Password:</label>
+        <input type="password" id="mpassword" name="mpassword"><br><br>
+        <label for="mtime">Meeting time:</label>
+        <input type="datetime-local" id="mtime" name="mtime"><br><br>
+        <label for="mlabel">Meeting Label:</label>
+        <input type="text" id="mlabel" name="mlabel"><br><br>
+        <button type="submit" class = "btn submit-button" onclick="testResults(this.form)" >Submit</button>
+        <input type="reset" onclick="reset_function()" value="Reset" class = "btn reset-button">
+        </form>
+
+        <button onclick="backHome();" class="btn home"> Back </button>
+    <script>
+        function reset_function(){
+            document.getElementById("newForm").reset()
+        }
+
+        function backHome() {
+            window.location.href = "index.html"
+        }
+    </script>
+    <script>
+        const fsLibrary = require('fs');
+        
+        function testResults(form) {
+            var meeting_name = form.mname.value;
+            var meeting_time = form.mtime.value.slice(11);
+            var meeting_label = form.mlabel.value;
+            fsLibrary.writeFile('meeting-name.txt', meeting_name, (error) => { 
+      
+        // In case of a error throw err exception. 
+            if (error) throw err; 
+            }) 
+            fsLibrary.writeFile('meeting-label.txt', meeting_label, (error) => { 
+      
+        // In case of a error throw err exception. 
+            if (error) throw err; 
+            }) 
+
+            fsLibrary.writeFile('meeting-time.txt', meeting_time, (error) => { 
+      
+        // In case of a error throw err exception. 
+            if (error) throw err; 
+            }) 
+
+            replacementLabels();
+        }
+       
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="database (2).js"></script>
+    </body>
+</html>

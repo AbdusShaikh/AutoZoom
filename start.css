@@ -1,0 +1,79 @@
+* {
+    background-color: #150E0E;
+}
+
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    position: relative;
+    left: 285px;
+    top: 18px;
+}
+
+.btn {
+    padding: 25px 42px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    left: 180px;
+    top: 30px;
+    margin-right: 20px;
+}
+
+.btn1{ 
+    background-color: grey;
+    border: none;
+}
+
+.btn2 {
+    background-color: grey;
+}
+
+table {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    border: solid white 1px;
+}
+
+
+.table-headings {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    padding: 15px;
+}
+
+td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-name {
+    padding-right: 220px;
+    color: lightblue;
+}
+
+.event-time {
+    padding-right: 200px;
+    color: white;
+}
+
+.event-label {
+    padding-right: 100px;
+    color: lightcoral;
+}
+
+.btn3 {
+    position: relative;
+    top: 150px;
+    color: white;
+    margin-bottom: 100px;
+    background-color: #65b4ce;
+    padding: 15px 32px;
+    font-size: 16px;
+    left: 330px;
+    margin-bottom: 20%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> AutoZoom </title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href= "index.css">
+
+</head>
+<body>
+    <img class="logo" src="Images/AutoZoom.png" alt="Logo">
+    <h3 class="date" id="date"> Date goes here! </h3> 
+    
+    <h2 class = "desc"> AutoZoom is your one-stop destination for all of your Zoom meeting links! Simply set up your schedule
+        and AutoZoom will keep track of the time for you. 
+    </h2>
+    
+    <form action = "help.html" method = "get"> 
+        <input type="image" src="Images/question-mark_symbol.png" class="question-mark" />
+    </form>
+    
+
+    <button class = start-button onclick="toStart();"> Start </button>
+
+    <button class = "add-button" onclick = "toAdd();"> Add Meetings </button>
+    
+    <script> 
+        var d = new Date()
+        document.getElementById("date").innerHTML = d
+
+
+        function toStart() {
+            window.location.href = "start.html"
+        }
+
+        function toAdd() {
+            window.location.href = "input (2).html"
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

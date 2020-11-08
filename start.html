@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="start.css">
+        <script type="text/javascript" src = "input.js"></script>
+        <meta charset="UTF-8">
+        <title> AutoZoom </title>
+    </head>
+    <body>
+        <h1 class = "title"> AutoZoom Portal </h1> 
+
+        <button class = "btn btn1" onclick=""> Join Class </button>
+        <button class = "btn btn2"> Next Class: APS100 </button>
+
+
+        <table class="event-table">
+            <tr>
+                <th class = "table-headings event-name"> Event Name </th>
+                <th class = "table-headings event-time"> Time </th>
+                <th class = "table-headings event-label"> Label </th>
+            </tr>
+
+            <tr>
+                <td> MAT186 </th>
+                <td> 11:30 </th>
+                <td> Class </th> 
+            </tr>
+
+            <tr>
+                <td> CIV100 </th>
+                <td> 12:30 </th>
+                <td> Class </th> 
+            </tr>
+
+            <tr>
+                <td> MAT188 </th>
+                <td> 14:00 </th>
+                <td> Class </th> 
+            </tr>
+
+            <tr>
+                <td> APS111 </th>
+                <td> 16:00 </th>
+                <td> Class </th> 
+            </tr>
+
+
+            <tr>
+                <td> UTAT Meeting </th>
+                <td> 18:00 </th>
+                <td> Design Team  </th> 
+            </tr>
+
+            <tr>
+                <td> EngSoc Meeting </th>
+                <td> 20:00 </th>
+                <td> Student Club </th> 
+            </tr>
+
+            <tr>
+                <td> APS100 </th>
+                <td> 3:45 </th>
+                <td> Class </th> 
+            </tr>
+
+        </table>
+
+
+        <button onclick="backHome();" class="btn3"> Back </button>
+
+        <script> window.$ = window.jQuery = require('jquery'); </script>
+
+        <script>
+            function backHome() {
+                window.location.href = "index.html"
+            }
+        </script>
+
+    </body>
+</html>

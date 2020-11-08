@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> AutoZoom </title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="help.css">
+    </head>
+
+    <body>
+
+            <h1 class = "help-title"> 
+                HELP 
+            </h1>
+
+
+            <h2 class = "info info1">
+                AutoZoom is a one-stop destination for all your Zoom meeting links!
+            </h2>
+
+            <h2 class = "info info2">
+                Click on the "Start" Button to view your current meetings. You'll be able to 
+                see your daily schedule with the current meeting link active. 
+            </h2>
+
+            <h2 class = "info info3">
+                To create a new meeting detail, click on the "Add Meetings" button. Then enter your
+                meeting link and time. You can also give the meeting a label, to help sort through
+                your meetings. 
+            </h2>
+
+            <h2 class = "info info4"> 
+                The back button will take you back to the home page.
+            </h2>
+
+        <button onclick="goBack()" class = "back-button"> Back </button>
+
+
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+
+</html>

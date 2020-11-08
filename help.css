@@ -1,0 +1,54 @@
+* {
+    background: #150E0E;
+}
+
+.help-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    left: 335px;
+    top: 10px;
+    font-size: 48px;
+}
+
+
+
+.back-button {
+    position: fixed;
+    left: 80%;
+    top: 470px;
+    border-radius: 4px;
+    border: none;
+    padding: 20px 45px ;
+    background-color: #65b4ce;
+    color: white;
+    font-size: 16px;
+}
+
+.info {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.info1 {
+    position: relative;
+    top: 30px;
+}
+
+.info2 {
+    position: relative;
+    top: 60px;
+}
+
+
+.info3 {
+    position: relative;
+    top: 100px;
+}
+
+.info4 {
+    position: relative;
+    top: 130px;
+}
